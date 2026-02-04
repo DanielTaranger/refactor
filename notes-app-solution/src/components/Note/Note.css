@@ -1,0 +1,101 @@
+@import "../Common/styles/noteStyles.css";
+
+.note-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+  transition: box-shadow 0.3s ease;
+  max-width: 530px;
+}
+
+.note-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.note-header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.note-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.pin-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  opacity: 0;
+  filter: grayscale(1);
+  transition: opacity 0.2s;
+}
+
+.note-card:hover .pin-button {
+  opacity: 0.8;
+}
+
+.pin-button.pinned {
+  opacity: 1;
+  filter: unset;
+}
+
+.updated-at {
+  font-size: 0.65rem;
+  color: #3e4850;
+  margin-right: 8px;
+  align-self: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.note-card:hover .updated-at {
+  opacity: 1;
+}
+
+.note-card:hover .note-actions {
+  opacity: 1;
+}
+
+.note-content-input,
+.note-content {
+  min-height: 80px;
+  width: calc(100% - 30px);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 1px 0;
+  font-family: inherit;
+}
+
+.note-card:hover .color-picker {
+  opacity: 1;
+}
+
+.note-card:hover .remove-checkbox-item {
+  opacity: 0.6;
+}
+
+.note-card:hover .add-checkbox-item {
+  opacity: 1;
+}

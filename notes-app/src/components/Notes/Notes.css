@@ -1,0 +1,16 @@
+.notes-section {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  color: #009353;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 16px;
+}

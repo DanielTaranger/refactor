@@ -1,0 +1,32 @@
+.search-input {
+  width: 350px;
+  padding: 6px 36px 6px 12px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  max-width: 350px;
+}
+
+.clear-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #9fa2a6;
+  padding: 4px;
+}
+
+.clear-button:hover {
+  color: #202124;
+}

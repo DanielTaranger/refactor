@@ -1,0 +1,59 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.notes-app {
+  min-height: calc(100vh - 48px);
+  padding: 24px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.app-header h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #858585;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  align-items: center;
+  gap: 20px;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 48px;
+  color: #5f6368;
+  font-size: 16px;
+}
+
+.notes-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
